@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parents' Night Out Kit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-blue: #2c5282;
+            --accent-gold: #d69e2e;
+            --text-dark: #2d3748;
+            --bg-white: #ffffff;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f7fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .card {
+            background: var(--bg-white);
+            max-width: 600px;
+            width: 100%;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+        }
+
+        .header {
+            background-color: var(--accent-gold);
+            padding: 30px;
+            text-align: center;
+            position: relative;
+        }
+
+        .header h1 {
+            color: white;
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 800;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .header-icons {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            right: 20px;
+            opacity: 0.8;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .main-content {
+            padding: 40px;
+            background-color: var(--primary-blue);
+            color: white;
+            text-align: center;
+        }
+
+        .sub-headline {
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+            font-weight: 700;
+            border-bottom: 2px solid rgba(255,255,255,0.2);
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .step-list {
+            text-align: left;
+            list-style: none;
+            padding: 0;
+        }
+
+        .step-item {
+            display: flex;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-right: 20px;
+            color: var(--accent-gold);
+            min-width: 30px;
+        }
+
+        .step-icon {
+            font-size: 1.5rem;
+            margin-right: 20px;
+            margin-top: 5px;
+            color: white;
+        }
+
+        .step-text h3 {
+            margin: 0 0 5px 0;
+            font-size: 1.2rem;
+            color: var(--accent-gold);
+        }
+
+        .step-text p {
+            margin: 0;
+            line-height: 1.5;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .footer {
+            background-color: var(--accent-gold);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .footer i {
+            color: #ff4d4d;
+            margin-left: 5px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 480px) {
+            .main-content { padding: 25px; }
+            .header h1 { font-size: 1.5rem; }
+            .step-item { flex-direction: column; text-align: center; }
+            .step-number { margin-bottom: 10px; margin-right: 0; }
+            .step-icon { margin-bottom: 10px; margin-right: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="header">
+            <div class="header-icons">
+                <i class="fas fa-utensils"></i>
+                <i class="fas fa-wine-glass-alt"></i>
+            </div>
+            <h1>Your "Parents' Night Out" Kit!</h1>
+            <div style="margin-top: 10px; color: white; font-size: 1.5rem;">
+                <i class="fas fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="sub-headline">How to Enjoy Your Well-Deserved Break:</div>
+
+            <div class="step-list">
+                <div class="step-item">
+                    <div class="step-number">1.</div>
+                    <div class="step-icon"><i class="far fa-calendar-check"></i></div>
+                    <div class="step-text">
+                        <h3>Pick Your Perfect Date</h3>
+                        <p>Call the restaurant to make a reservation for a night that suits your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">2.</div>
+                    <div class="step-icon"><i class="fas fa-user-check"></i></div>
+                    <div class="step-text">
+                        <h3>Confirm the Babysitters!</h3>
+                        <p>Once you have a date, check with Min & Don for their availability. (We're usually free for dinner rescues!)</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">3.</div>
+                    <div class="step-icon"><i class="fas fa-home"></i></div>
+                    <div class="step-text">
+                        <h3>Drop-off Point</h3>
+                        <p>On the chosen day, bring Riley & Eden over to our place for their fun playdate!</p>
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <div class="step-number">4.</div>
+                    <div class="step-icon"><i class="fas fa-utensils"></i></div>
+                    <div class="step-text">
+                        <h3>Dinner is Served</h3>
+                        <p>Go enjoy your amazing meal and some private time. You've earned it!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Love, Min & Don <i class="fas fa-heart"></i>
+        </div>
+    </div>
+
+</body>
+</html>
